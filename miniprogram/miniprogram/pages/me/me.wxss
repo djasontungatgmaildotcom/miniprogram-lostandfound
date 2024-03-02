@@ -1,0 +1,93 @@
+.body {
+
+}
+
+.unlogin-body {
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+}
+.unlogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40%;
+}
+
+.unlogin .unlogin-image {
+    width: 150rpx;
+    height: 150rpx;
+}
+
+.unlogin .unlogin-btn {
+    margin-top: 50rpx;
+    width: 80%;
+    background-color: #add8e6;
+    color: #fff;
+    height: 100rpx;
+    line-height: 2.1;
+}
+
+.info {
+    background-color: #add8e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100rpx 0;
+}
+
+.info .avatarUrl {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+}
+
+.info .nickName {
+    color: #fff;
+    margin-top: 30rpx;
+}
+
+.cell-body {
+    position: relative;
+}
+
+.cell-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: -20rpx;
+}
+
+.cell {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    background-color: #fff;
+    padding: 30rpx 20rpx;
+    border-radius: 20rpx;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+
+.cell-left {
+    display: flex;
+    align-items: center;
+}
+
+.cell-left .cell-left-image {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.cell-left .cell-left-text {
+    margin-left: 20rpx;
+}
+
+.cell-right .cell-right-image {
+    width: 30rpx;
+    height: 30rpx;
+}

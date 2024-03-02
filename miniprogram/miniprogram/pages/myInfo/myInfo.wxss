@@ -1,0 +1,69 @@
+.body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40rpx;
+}
+
+.info .info-item {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    height: 170rpx;
+    border-bottom: 4rpx solid #f3f3f3;
+}
+
+.info .info-item .avatarUrl {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+    border: 5rpx solid #add8e6;
+}
+
+.phone-right {
+    display: flex;
+    align-items: center;
+}
+
+.phone-right .edit-input {
+    border: 2rpx solid #d3d3d3;
+    padding: 15rpx 5rpx;
+    margin-right: 20rpx;
+}
+
+.phone-right .edit-status .edit-icon {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.phone-right .edit {
+    position: relative;
+}
+
+.phone-right .edit .close-icon {
+    position: absolute;
+    width: 30rpx;
+    height: 30rpx;
+    right: 40rpx;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.btn {
+    width: 80% !important;
+    background-color: #add8e6;
+    color: #fff;
+    margin-top: 50rpx;
+}
+
+.phone-right .phone {
+    margin-right: 160rpx;
+}

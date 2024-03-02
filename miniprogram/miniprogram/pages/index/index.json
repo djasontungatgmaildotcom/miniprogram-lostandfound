@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "SearchInput": "../../components/SearchInput/SearchInput",
+        "Tab": "../../components/Tab/Tab",
+        "ViewCard": "../../components/ViewCard/ViewCard"
+    }
+}

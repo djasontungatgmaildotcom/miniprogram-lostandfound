@@ -1,0 +1,69 @@
+<view class="body">
+    <swiper class="banner" indicator-dots="true" autoplay="false" interval="2000" duration="500">
+        <block wx:for="{{ info.imgList }}" wx:key="*this">
+            <swiper-item>
+                <image class="banner-image" src="{{ item }}"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <view class="name">{{ info.name }}</view>
+
+    <view class="container">
+        <view class="date item">
+            <text class="label">拾到时间</text>
+            <text>{{ info.date }}</text>
+        </view>
+        <view class="region item">
+            <text class="label">拾到地点</text>
+            <text>{{ info.region }}</text>
+        </view>
+        <view class="desc item">{{ info.desc }}</view>
+    </view>
+
+    <view class="comment">
+        <view class="title">评论区</view>
+        <view class="comment-list">
+            <view class="comment-item" wx:for="{{ info.commentList }}" wx:key="index">
+                <view class="comment-item-left">
+                    <image class="avatar" src="{{ item.avatarUrl }}"></image>
+                    <view class="content">
+                        <text>{{ item.nickName }}</text>
+                        <text>{{ item.content }}</text>
+                    </view>
+                </view>
+                <view class="comment-item-right">
+                    {{ item.time }}
+                </view>
+            </view>
+        </view>
+        <textarea class="comment-textarea" placeholder="请输入您的评论内容" name="" id="" cols="30" rows="10" value="{{ comment }}" bindinput="getComment"></textarea>
+        <button class="comment-button" type="primary" bindtap="submitComment">提交</button>
+    </view>
+
+    <view class="bottom">
+        <view class="bottom-left" bindtap="getPhone">
+            <image class="icon-comment" src="../../images/comment.png"></image>
+            <text>点击联系我</text>
+        </view>
+        <button class="bottom-mid" disabled="{{ info.state !== 0 }}" size="mini" bindtap="toClaim">{{ 
+            info.state === 0 ? '认领' : (info.state === 1 ? '认领中' : '已认领')
+        }}</button>
+        <view class="bottom-right" bindtap="toCollection">
+            <image class="icon-collection" src="{{ collectionIcon[0] }}"></image>
+            <text>收藏</text>
+        </view>
+    </view>
+
+    <view class="modal" wx:if="{{ showModal }}">
+        <view class="label">描述:</view>
+        <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="请输入您的描述" value="{{ desc }}" bindinput="getDesc"></textarea>
+        <view class="label">相关证明:</view>
+        <button class="upload-btn" wx:if="{{ img_url.length === 0 }}" bindtap="uploadImg">上传</button>
+        <image class="img" wx:else src="{{ img_url }}"></image>
+        <view class="btn-list">
+            <button size="mini" bindtap="cancel">取消</button>
+            <button size="mini" type="primary" bindtap="submit">确定</button>
+        </view>
+    </view>
+</view>

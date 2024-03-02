@@ -1,0 +1,21 @@
+<view class="lose-body">
+    <view class="lose-item">
+        <image class="lose-item-image" src="{{ data.imgList[0] }}"></image>
+        <view class="lose-content">
+            <text class="name">{{ data.name }}</text>
+            <text class="region">{{ data.region }}</text>
+            <text class="date">{{ data.date }}</text>
+            <text class="desc">{{ data.desc }}</text>
+            <text class="publish-time">{{ data.time }}</text>
+        </view>
+    </view>
+    <view class="handle-btn" wx:if="{{ handle }}">
+        <view>
+            <button class="update-btn" size="mini" type="primary" data-info="{{ data }}" catchtap="toUpdate">修改</button>
+            <button class="delete-btn" size="mini" type="warn" data-id="{{ data._id }}" catchtap="toDelete">删除</button>
+        </view>
+    </view>
+    <view class="mask" wx:if="{{ data.state === 2 }}">
+        已认领
+    </view>
+</view>

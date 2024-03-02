@@ -1,0 +1,35 @@
+.search {
+    background-color: #fff;
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input {
+    height: 80rpx;
+    background-color: #f3f3f3;
+    width: 90%;
+    border-radius: 40rpx;
+    color: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.search-content .search-icon {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.search-content .search-text {
+    margin-left: 10rpx;
+}

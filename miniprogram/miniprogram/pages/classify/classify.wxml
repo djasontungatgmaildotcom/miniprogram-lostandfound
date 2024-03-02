@@ -1,0 +1,22 @@
+<view class="body" wx:if="{{ login }}">
+    <SearchInput bindtap="toSearch" />
+    <view class="classify-container">
+        <view class="classify-left">
+            <view class="classify-left-item {{ select === index ? 'classify-select' : '' }}" wx:for="{{ asideBar }}" wx:key="index" data-index="{{ index }}" bindtap="selectLeft">
+                <text class="classify-left-text">{{ item }}</text>
+                <block wx:if="{{ select === index }}">
+                    <view class="classify-line"></view>
+                </block>
+            </view>
+        </view>
+        <view class="classify-right">
+            <view class="classify-right-item" wx:for="{{ rightList[select] }}" wx:key="index" bindtap="toClassify" data-text="{{ item.text }}">
+                <image class="classify-right-image" src="{{ item.url }}"></image>
+                <text class="classify-right-text">{{ item.text }}</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view wx:else>
+    请您登录
+</view>

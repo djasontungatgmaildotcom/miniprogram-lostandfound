@@ -1,0 +1,174 @@
+.banner {
+    height: 55vh;
+}
+
+.banner-image {
+    width: 100%;
+    height: 55vh;
+}
+
+.name {
+    background-color: #fff;
+    margin-top: 20rpx;
+    padding: 20rpx;
+    font-weight: bold;
+}
+
+.container {
+    background-color: #fff;
+    margin-top: 20rpx;
+}
+
+.container .item {
+    padding: 20rpx;
+    display: flex;
+    align-items: center;
+}
+
+.container .item .label {
+    width: 70rpx;
+    color: #999999;
+    font-size: 26rpx;
+    margin-right: 20rpx;
+}
+
+.bottom {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    margin-top: 20rpx;
+    padding: 20rpx 40rpx;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    bottom: 20rpx;
+}
+
+.bottom .bottom-left {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-radius: 30rpx;
+    padding: 10rpx;
+    width: 60%;
+    color: #999999;
+}
+
+.bottom .bottom-left .icon-comment {
+    width: 40rpx;
+    height: 40rpx;
+    margin-left: 20rpx;
+    margin-right: 10rpx;
+}
+
+.bottom .bottom-right .icon-collection {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.bottom .bottom-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body {
+    position: relative;
+    padding-bottom: 160rpx;
+}
+
+
+.comment {
+    background-color: #fff;
+    margin-top: 20rpx;
+    padding: 20rpx;
+    box-sizing: border-box;
+}
+
+.comment .title {
+    font-size: 40rpx;
+    font-weight: 600;
+    text-align: center;
+}
+
+.comment-list {
+    margin-top: 20rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20rpx;
+}
+
+.comment-item-left {
+    display: flex;
+    align-items: center;
+}
+
+.comment-item-left .avatar {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+}
+
+.comment-item-left .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20rpx;
+}
+
+.comment .comment-textarea {
+    border: 1px solid #000;
+    width: 100%;
+    padding: 20rpx;
+    box-sizing: border-box;
+    border-radius: 20rpx;
+}
+
+.comment .comment-button {
+    margin-top: 20rpx;
+}
+
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    padding: 40rpx;
+    box-sizing: border-box;
+    width: 90%;
+    border-radius: 40rpx;
+    z-index: 10;
+}
+
+.modal .textarea {
+    border: 1rpx solid #000;
+    border-radius: 40rpx;
+    padding: 20rpx;
+    box-sizing: border-box;
+    margin: 20rpx 0;
+}
+
+.modal .upload-btn {
+    margin: 20rpx auto;
+}
+
+.modal .img {
+    width: 100%;
+    height: 300rpx;
+    margin: 20rpx 0;
+}
+
+.modal .btn-list {
+    display: flex;
+    margin-top: 20rpx;
+}

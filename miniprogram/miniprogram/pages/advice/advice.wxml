@@ -1,0 +1,12 @@
+<view class="advice-page">
+  <view class="title">意见反馈</view>
+  <view class="item">
+    <text>手机号: </text>
+    <input type="text" placeholder="请输入您的手机号" value="{{ phone }}" bindinput="getPhone" />
+  </view>
+  <view class="item">
+    <text>反馈内容: </text>
+    <textarea value="" placeholder="请输入您的反馈内容" value="{{ advce_content }}" bindinput="getAdviceContent" />
+  </view>
+  <button type="primary" bind:tap="submit">提交</button>
+</view>

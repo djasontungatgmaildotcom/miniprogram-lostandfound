@@ -1,0 +1,31 @@
+.advice-page {
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40rpx;
+  box-sizing: border-box;
+  margin-top: 80rpx;
+  border-radius: 40rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 40rpx 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx 0;
+}
+
+.item input, textarea {
+  border: 1rpx solid #000;
+  padding: 20rpx;
+  width: 90%;
+  border-radius: 20rpx;
+}
+
+.title {
+  font-size: 50rpx;
+  font-weight: bold;
+  text-align: center;
+}

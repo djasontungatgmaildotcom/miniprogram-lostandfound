@@ -1,0 +1,82 @@
+.body {
+    background-color: #fff;
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 20rpx;
+}
+
+.search {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f3f3f3;
+    border-radius: 40rpx;
+    padding: 10rpx 20rpx;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.search .search-icon {
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 10rpx;
+}
+
+.search .close-icon {
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    right: 20rpx;
+}
+
+.search-log {
+    display: flex;
+    padding: 30rpx 20rpx;
+    justify-content: space-between;
+    font-size: 26rpx;
+    border-bottom: 3rpx solid #f3f3f3;
+}
+
+.search-log .delete-icon {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.log-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15rpx 20rpx;
+    font-size: 26rpx;
+}
+
+.log-list .log-item {
+    background-color: #999;
+    color: #fff;
+    padding: 10rpx;
+    margin-right: 15rpx;
+    border-radius: 15rpx;
+    margin-bottom: 5rpx;
+}
+
+.result-search {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30rpx;
+}
+
+.search-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20rpx 30rpx;
+    /* 盒模型 */
+    box-sizing: border-box;
+    border-bottom: 3rpx solid #f3f3f3;
+    font-size: 26rpx;
+}
+
+.search-item-right {
+    width: 30rpx;
+    height: 30rpx;
+}

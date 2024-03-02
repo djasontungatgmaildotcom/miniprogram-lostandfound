@@ -1,0 +1,19 @@
+<view class="body" wx:if="{{ login }}">
+    <SearchInput bindtap="toSearch" />
+    <swiper class="banner" indicator-dots="true" autoplay="false" interval="2000" duration="500">
+        <block wx:for="{{background}}" wx:key="*this">
+            <swiper-item>
+                <image class="banner-image" src="{{ item.image_url }}"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <Tab bindgettab="getTab" tabList="{{ tabList }}" />
+
+    <view class="lose">
+        <ViewCard wx:for="{{ list }}" wx:key="index" data="{{ item }}" bindtap="toDetail" data-info="{{ item }}" />
+    </view>
+</view>
+<view wx:else>
+    请您登录
+</view>

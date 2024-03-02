@@ -1,0 +1,78 @@
+.lose-item {
+    width: 100%;
+    display: flex;
+    padding: 20rpx;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.lose-item .lose-item-image {
+    width: 250rpx;
+    height: 250rpx;
+    min-width: 250rpx;
+    border-radius: 20rpx;
+}
+
+.lose-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rpx;
+    width: 100%;
+}
+
+.lose-content .name {
+    font-weight: bold;
+}
+
+.lose-content .region {
+    margin-top: 35rpx;
+}
+
+.lose-content .region, .date, .desc {
+    font-size: 26rpx;
+    margin-bottom: 5rpx;
+}
+
+.lose-content .desc {
+    max-width: 400rpx;
+    color: #666;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.lose-content .publish-time {
+    margin-top: 30rpx;
+    margin-left: auto;
+    color: #666;
+    font-size: 26rpx;
+}
+
+.lose-body {
+    background-color: #fff;
+    margin-bottom: 5rpx;
+    position: relative;
+}
+
+.handle-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.update-btn, .delete-btn {
+    margin-right: 20rpx;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    color: #fff;
+    font-size: 50rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

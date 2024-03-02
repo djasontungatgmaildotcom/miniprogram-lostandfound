@@ -1,0 +1,43 @@
+.tabbar {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-top: 10rpx;
+    z-index: 9999;
+}
+
+.tabbar-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabbar-item .tabbar-image {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.tabbar-item .tabbar-text {
+    font-size: 26rpx;
+    margin-top: 10rpx;
+}
+
+.tabbar-item .publish {
+    width: 65rpx;
+    height: 65rpx;
+    background-color: #add8e6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: auto;
+}
+
+.tabbar-select {
+    color: #add8e6;
+}
