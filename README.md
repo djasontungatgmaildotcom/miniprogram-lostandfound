@@ -36,10 +36,10 @@ nodejs编写的接口端, 没有进行工程化, 可以自行改进
 npm install express --save
 ```
 
-切换npm镜像源为淘宝镜像源
+切换npm镜像源为华为镜像源
 
 ```
-npm config set registry https://registry.npm.taobao.org
+npm config set registry https://mirrors.huaweicloud.com/repository/npm
 ```
 
 下载nodemon解决nodejs代码更新的痛点
